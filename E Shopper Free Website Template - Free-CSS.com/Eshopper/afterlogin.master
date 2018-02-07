@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="afterlogin.master.cs" Inherits="Eshopper_afterlogin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>E-Commerce</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="stylesheet" href="css/bootstrap1.min.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <header id="header"><!--header-->
+
+            <div class="header_top_title"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="titlepart">
+							<ul class="nav nav-pills">
+								<li><a> AUCTION BASED E - COMMERCE WEB APPLICATION</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+
+          <div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+                        <img src="images/home/logo.png" alt="" />
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+                                <li><a> Welcome <asp:Label ID="lbl_fname" runat="server"></asp:Label></a></li>
+								<li><a href="profile.aspx"><i class="fa fa-user"></i> Profile</a></li>
+								<li><a href="logout.aspx"><i class="fa fa-lock"></i> Logout</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+		
+	<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="dashboard.aspx">Available Products</a></li>
+                                <li><a href="auction.aspx">Products in Auction</a></li>
+                                <li><a href="postproduct.aspx">Post a Product</a></li>
+                                <li><a href="messages.aspx">Messages</a></li>
+                                <li><a href="productpurchased.aspx">Products Purchased</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</header><!--/header-->
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+	
+	
+	
+	<footer id="footer"><!--Footer-->
+		
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2016 Auction Based Ecommerce Web Application. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!--/Footer-->
+	
+
+  
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+    </div>
+    </form>
+</body>
+</html>
